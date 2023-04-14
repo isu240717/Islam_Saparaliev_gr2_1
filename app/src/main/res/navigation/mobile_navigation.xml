@@ -22,14 +22,16 @@
         android:name="com.example.taskapp53.ui.notifications.NotificationsFragment"
         android:label="@string/title_notifications"
         tools:layout="@layout/fragment_notifications" />
+
     <fragment
         android:id="@+id/newTaskFragment"
         android:name="com.example.taskapp53.ui.home.new_task.NewTaskFragment"
         android:label="@string/new_task"
         tools:layout="@layout/fragment_new_task" />
     <fragment
-        android:id="@+id/navigation_profile"
-        android:name="com.example.taskapp53.ui.profile.ProfileFragment"
-        android:label="@string/profile_fragment"
-        tools:layout="@layout/fragment_profile2" />
+        android:id="@+id/onBoardFragment"
+        android:name="com.example.taskapp53.ui.onboard.OnBoardFragment"
+        android:label="fragment_on_board"
+        tools:layout="@layout/fragment_on_board" />
+
 </navigation>

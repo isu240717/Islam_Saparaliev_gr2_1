@@ -10,8 +10,8 @@ class TaskAdapter : RecyclerView.Adapter<TaskAdapter.TaskViewHolder>() {
 
     private var taskList = arrayListOf<TaskModel>()
 
-    fun addTask(taskModel: TaskModel){
-        taskList.add(taskModel)
+     fun addTask(taskModel: TaskModel){
+        taskList.add(0,taskModel)
     }
 
     override fun onCreateViewHolder(parent: ViewGroup, viewType: Int): TaskViewHolder {
@@ -31,6 +31,7 @@ class TaskAdapter : RecyclerView.Adapter<TaskAdapter.TaskViewHolder>() {
     override fun getItemCount(): Int {
         return taskList.size
     }
+
 
     class TaskViewHolder(private var binding: TaskItemBinding) :
         RecyclerView.ViewHolder(binding.root) {
